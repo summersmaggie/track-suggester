@@ -3,6 +3,22 @@
   text-align: center;
 }
 
+.container {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.jumbotron, .form {
+  background-color: #e3e5e8;
+}
+
+.bg {
+    background-image: url("https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?auto=format&fit=crop&w=750&q=80");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 p {
   font-size: 15px;
 }
@@ -11,11 +27,15 @@ h1 {
   padding-bottom: 15px;
 }
 
+h5.form {
+  font-weight: bold;
+}
+
 .form-group {
   padding: 15px;
 }
 
-.btn-outline-dark {
+.btn-light {
   padding: 15px;
   margin: 20px;
 }

@@ -7,9 +7,10 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="img/epicodus.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <title>Epicodus Track Suggester Tool</title>
   </head>
-  <body>
+  <body class="bg">
     <div class="container">
 
       <div class="jumbotron">
@@ -19,70 +20,71 @@
         <p>Answer the questions below, and we'll steer you in the right direction.</p>
       </div>
 
-      <form id="track">
-        <div class="form-group">
-          <label for="name"><h5>What's your name?</h5></label>
-          <input id="name" class="form-control" type="text">
-        </div>
+      <div class="form">
+        <form id="track">
+          <div class="form-group">
+            <label for="name"><h5>What's your name?</h5></label>
+            <input id="name" class="form-control" type="text">
+          </div>
 
-        <div class="form-group">
-          <h5>What kind of company do you want to work for?</h5>
-          <select class="form-control" id="company">
-            <option value="startup">Startup</option>
-            <option value="smalL">Small Company</option>
-            <option value="large">Large Company</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <h5>What kind of company do you want to work for?</h5>
+            <select class="form-control" id="company">
+              <option value="startup">Startup</option>
+              <option value="smalL">Small Company</option>
+              <option value="large">Large Company</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <h5>Do you want to build Android apps?</h5>
-          <select class="form-control" id="android">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <h5>Do you want to build Android apps?</h5>
+            <select class="form-control" id="android">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <h5>Would you rather work on software or web applications?</h5>
-          <select class="form-control" id="work">
-            <option value="software">Software</option>
-            <option value="web">Web Applications</options>
-          </select>
-        </div>
+          <div class="form-group">
+            <h5>Would you rather work on software or web applications?</h5>
+            <select class="form-control" id="work">
+              <option value="software">Software</option>
+              <option value="web">Web Applications</options>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <h5>Would you rather build sites like Airbnb and Shopify or games?</h5>
-          <select class="form-control" id="build">
-            <option value="websites">Websites like Airbnb</option>
-            <option value="games">Games</option>
-          </select>
-        </div>
+          <div class="form-group">
+            <h5>Would you rather build sites like Airbnb and Shopify or games?</h5>
+            <select class="form-control" id="build">
+              <option value="websites">Websites like Airbnb</option>
+              <option value="games">Games</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <h5>Do you want to build mobile apps?</h5>
-          <select class="form-control" id="mobile">
-            <option value="yes2">Yes</option>
-            <option value="no2">No</option>
-          </select>
+          <div class="form-group">
+            <h5>Do you want to build mobile apps?</h5>
+            <select class="form-control" id="mobile">
+              <option value="yes2">Yes</option>
+              <option value="no2">No</option>
+            </select>
+          </div>
         </div>
-
-        <button type="submit" class="btn btn-outline-dark">Show me what language I should take!</button>
-      </form>
+          <button type="submit" class="btn-light">Show me what language I should take!</button>
+        </form>
 
       <div class="output">
-        <div class="alert alert-success" role="alert" id="ruby">
+        <div class="alert alert-primary" role="alert" id="ruby">
             <h4><span class="name"></span>, you should take the Ruby track!</h4>
-            <h5>Because you're primarily interested in working on web applications and websites.</h5>
+            <h5>Why? Because you're primarily interested in working on web applications and websites.</h5>
             <h5>Learn more about about the Epicodus Ruby track <a href="https://www.epicodus.com/ruby" class="alert-link">here</a>.</h5>
           </div>
 
-        <div class="alert alert-success" role="alert" div id="c">
+        <div class="alert alert-primary" role="alert" div id="c">
           <h4><span class="name"></span>, you should take the C# track!
           <h5>Why? Because you're most interested in working on software and games.</h5>
           <h5>Learn more about about the Epicodus C# track <a href="https://www.epicodus.com/c-sharp" class="alert-link">here</a>.</h5>
         </div>
 
-        <div class="alert alert-success" role="alert" div id="java">
+        <div class="alert alert-primary" role="alert" div id="java">
           <h4><span class="name"></span>, you should take the Java track!</h4>
           <h5>Why? Because you're primarily interested in building mobile apps.</h5>
           <h5>Learn more about about the Epicodus Java track <a href="https://www.epicodus.com/java" class="alert-link">here</a>.</h5>
