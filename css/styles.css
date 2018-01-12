@@ -12,11 +12,7 @@
 }
 
 .bg {
-    background-image: url("https://images.unsplash.com/photo-1506815444479-bfdb1e96c566?auto=format&fit=crop&w=750&q=80");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: #A6A6A7;
 }
 
 p {
