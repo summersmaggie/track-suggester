@@ -15,11 +15,16 @@
       <div class="jumbotron">
         <h1>What Programming Language Should I Learn?</h1>
         <p>Interested in signing up for a programming bootcamp? You've come to the right place! <a href="https://www.epicodus.com/">Epicodus</a> is a highly regarded and highly ranked bootcamp, complete with internship placement and job search assistance.</p>
-        <p>The first thing to decide after you sign up is which Epicodus track you want to take. This is an important decision, as this will determine what programming language you learn.</p>
+        <p>The first thing to decide after signing up is which Epicodus track you want to take. This is an important decision, as this will determine what programming language you learn.</p>
         <p>Answer the questions below, and we'll steer you in the right direction.</p>
       </div>
 
       <form id="track">
+        <div class="form-group">
+          <label for="name"><h5>What's your name?</h5></label>
+          <input id="name" class="form-control" type="text">
+        </div>
+
         <div class="form-group">
           <h5>What kind of company do you want to work for?</h5>
           <select class="form-control" id="company">
@@ -66,19 +71,19 @@
 
       <div class="output">
         <div class="alert alert-success" role="alert" id="ruby">
-            <h4>You should take the Ruby track!</h4>
+            <h4><span class="name"></span>, you should take the Ruby track!</h4>
             <h5>Because you're primarily interested in working on web applications and websites.</h5>
             <h5>Learn more about about the Epicodus Ruby track <a href="https://www.epicodus.com/ruby" class="alert-link">here</a>.</h5>
           </div>
 
         <div class="alert alert-success" role="alert" div id="c">
-          <h4>You should take the C# track!
+          <h4><span class="name"></span>, you should take the C# track!
           <h5>Why? Because you're most interested in working on software and games.</h5>
           <h5>Learn more about about the Epicodus C# track <a href="https://www.epicodus.com/c-sharp" class="alert-link">here</a>.</h5>
         </div>
 
         <div class="alert alert-success" role="alert" div id="java">
-          <h4>You should take the Java track!</h4>
+          <h4><span class="name"></span>, you should take the Java track!</h4>
           <h5>Why? Because you're primarily interested in building mobile apps.</h5>
           <h5>Learn more about about the Epicodus Java track <a href="https://www.epicodus.com/java" class="alert-link">here</a>.</h5>
         </div>

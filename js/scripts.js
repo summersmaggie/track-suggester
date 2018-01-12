@@ -1,10 +1,13 @@
 $(document).ready(function() {
   $("form#track").submit(function(event) {
+    var nameInput = $("input#name").val();
     var company = $("select#company").val();
     var android = $("select#android").val();
     var work = $("select#work").val();
     var build = $("select#build").val();
     var mobile = $("select#mobile").val();
+
+    $(".name").text(nameInput);
 
     if (android === 'yes' && mobile === 'yes2') {
       $('#java').show();
