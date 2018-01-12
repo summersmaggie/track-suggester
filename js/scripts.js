@@ -6,13 +6,17 @@ $(document).ready(function() {
     var build = $("select#build").val();
     var mobile = $("select#mobile").val();
 
-    if (company === 'startup') {
+    if (work === 'software' && build === 'games') {
+      $('#c').show();
+    } else if (android === 'yes' && mobile === 'yes2') {
+      $('#java').show();
+    } else if (work === 'web' && build === 'websites') {
+      $('#ruby').show();
+    } else if (android === 'no' && mobile === 'no2') {
       $('#ruby').show();
     } else {
-      $('#c').show();
+      $('#java').show();
     }
-
-
 
     event.preventDefault();
   });
