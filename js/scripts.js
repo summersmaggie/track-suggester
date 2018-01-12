@@ -6,10 +6,10 @@ $(document).ready(function() {
     var build = $("select#build").val();
     var mobile = $("select#mobile").val();
 
-    if (work === 'software' && build === 'games') {
-      $('#c').show();
-    } else if (android === 'yes' && mobile === 'yes2') {
+    if (android === 'yes' && mobile === 'yes2') {
       $('#java').show();
+    } else if (work === 'software' && build === 'games') {
+    $('#c').show();
     } else if (work === 'web' && build === 'websites') {
       $('#ruby').show();
     } else if (android === 'no' && mobile === 'no2') {
