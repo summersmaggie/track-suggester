@@ -12,7 +12,7 @@ $(document).ready(function() {
     if (android === 'yes' && mobile === 'yes2') {
       $('#java').show();
     } else if (work === 'software' && build === 'games') {
-    $('#c').show();
+      $('#c').show();
     } else if (work === 'web' && build === 'websites') {
       $('#ruby').show();
     } else if (android === 'no' && mobile === 'no2') {
